@@ -21,17 +21,16 @@ public class Main {
         }
         ans=scn.nextLine();
 
-        switch (ans){
-            case "E":
-                System.out.println("Lutfen yenisifrenizigiriniz: ");
-                password=scn.nextLine();
+        switch (ans) {
+            case "E" -> {
+                System.out.println("Lutfen yeni sifrenizi giriniz: ");
+                password = scn.nextLine();
                 if (password.equals("java123"))
                     System.out.println("Sifre olusturulamadi lutfen baska sifre girinz.");
                 else
                     System.out.println("Sifre olusturuldu.");
-                break;
-            case "H":
-                System.out.println("Lutfen tekrar deneyiniz.");
+            }
+            case "H" -> System.out.println("Lutfen tekrar deneyiniz.");
         }
     }
 }
